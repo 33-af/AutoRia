@@ -3,19 +3,53 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --primaryColor: #1a202c;
+  --secondaryColor: #3563e9;
+  --thirdlyColor: #596780;
+  --darkGreyColor: #90a3bf;
+  --whiteColor: #ffffff;
+  --semiTransparentGray: rgba(19, 19, 19, 0.6);
+  --br: 4px;
+  --pt: 10px;
+  --pb: 10px;
+  --pr: 20px;
+  --pl: 20px;
+  --mainFontFamily: "var(--font-jakarta)";
+  --btn-width: 116px;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--mainFontFamily);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  display: none;
+}
+
+.containerWrapper{
+  @apply w-full max-w-[1312px] m-auto;
+}
+
+.btn {
+  background-color: var(--secondaryColor);
+  color: var(--whiteColor);
+  border-radius: var(--br);
+  width: var(--btn-width);
+  padding: var(--pt) var(--pr) var(--pb) var(--pl);
+  border: none;
+}
+
+.addInput {
+  background: none;
+  color: var(--darkGreyColor);
+  border: none;
+  padding: 16px 24px;
 }
