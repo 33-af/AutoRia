@@ -16,6 +16,14 @@ export default {
         whiteColor: "var(--whiteColor)",
         semiTransparentGray: "var(--semiTransparentGray)",
       },
+      borderRadius: {
+        '40Percent': '40px',
+      },
+
+      width: {
+        '492': '492px',
+      },
+
       fontFamily: {
         jakarta: "var(--mainFontFamily)",
       },

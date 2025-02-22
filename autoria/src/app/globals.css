@@ -14,7 +14,7 @@
   --pb: 10px;
   --pr: 20px;
   --pl: 20px;
-  --mainFontFamily: "var(--font-jakarta)";
+  --mainFontFamily: var(--font-jakarta);
   --btn-width: 116px;
 }
 
@@ -23,6 +23,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: var(--mainFontFamily);
+  background-color: #F6F7F9;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
